@@ -1,0 +1,33 @@
+*{margin:0;padding:0;list-style: none;font-family: "微软雅黑"}
+img{vertical-align: middle;border:0}
+a{text-decoration: none;}
+.clear{clear:both;}
+/* 主题布局样式开始 */
+#bg{width:100%;height:100%;position: absolute;left:0;top:0;z-index:-999;min-width:1380px;}
+#bg img{width:100%;height:100%;}
+/* 主题布局样式结束 */
+/*头部的样式开始*/
+#header{padding:0px 15px 0px 44px;height:76px;line-height: 65px;min-width:1321px;}
+#header .logo{float:left;}
+#header .logo img{height:76px;}
+#header .header-bg{width:100%;height:76px;position: absolute;left:0;top:0;z-index:-888;min-width:1380px;}
+#header .header-bg img{width:100%;height:100%}
+#header .nav{width:35%;float:right;margin-top:20px;}
+#header .nav li{width:120px;height:55px;float:left;background: url(../../images/navbg.png) no-repeat left center;background-size:contain;margin-left:-5px;text-align:center;line-height: 55px;}
+#header .nav li ol{display:none;overflow:hidden;}
+#header .nav li:hover>ol{display:block;}
+#header .nav li ol li{background:none;}
+#header .nav li a{color:#04bbef;font-size: 20px;font-weight: 800;}
+#header .nav .active{background: url(../../images/activenavbg.png) no-repeat left center;background-size:contain;}
+#header .nav .active a{color:#fff;}
+/*头部的样式结束*/
+/*主体样式开始*/
+#main{padding:0px 15px;overflow:hidden;text-align: center;min-width:1350px;}
+#main h2{display: inline-block;padding:0px 20px;margin-bottom:10px;background:url(../../images/titlebg.png) no-repeat center bottom;background-size:contain;color:#fff;line-height: 50px;font-size: 18px;font-weight: normal;}
+#main .info{width:100%;background:rgba(12,56,238,0.1);position: relative;box-sizing:border-box;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1f0c38ee,endColorstr=#1f0c38ee);}
+#main .info span {position:absolute;padding:5px;border-style: solid;border-color: #01a2c5;}
+#main .info .row1 {border-width: 2px 0 0 2px;top:-2px;left:-2px;}
+#main .info .row2 {border-width: 2px 2px 0 0;top:-2px;right:-2px;}
+#main .info .col1 {border-width: 0 0 2px 2px;bottom:-2px;left:-2px;}
+#main .info .col2 {border-width: 0 2px 2px 0;bottom:-2px;right:-2px;}
+/*主体样式结束*/

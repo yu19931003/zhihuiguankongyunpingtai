@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;"name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../css/commen/header.css">
+	<link rel="stylesheet" type="text/css" href="../../css/privite/index.css">
+	<script src="../../js/commen/jquery.min.js"></script>
+	<script src="../../js/commen/echarts.js"></script>
+	<script src="../../js/commen/pie.js"></script>
+	<script src="../../js/commen/dbar.js"></script>
+	<script src="../../js/commen/bar.js"></script>
+	<script src="../../js/page/index.js"></script>
+
+</head>
+<body>
+	<!--主题背景布局开始-->
+	<div id="bg">
+		<img src="../../images/bg.jpg">
+	</div>
+	<!--主题背景布局结束-->
+	<!--头部的布局开始-->
+	<div id="header">
+		<div class="header-bg"><img src="../../images/headerbg.png"></div>
+		<!--logo的布局-->
+		<div class="logo"><img src="../../images/logo.png"></div>
+		<!--nav的布局-->
+		<div class="nav">
+			<ul>
+				<li class="active"><a href="#">首页</a></li>
+				<li><a href="../project/project.html">项目</a></li>
+				<li>
+					<a href="../video/video.html">视频</a>
+					<ol>
+						<li><a href="../video/shebei.html">设备管理</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--头部的布局结束-->
+	<!-- 主题布局开始 -->
+	<div id="main">
+		<div class="top">
+			<div class="left">
+				<h2>济宁公司全景地图</h2>
+				<!--info为每一个内容的背景-->
+				<div class="info">
+					<!--以下四个span是用来做样式的与内容无关-->
+					<span class="row1"></span>
+					<span class="row2"></span>
+					<span class="col1"></span>
+					<span class="col2"></span>
+					<!--以上四个span是用来做样式的与内容无关-->
+					<div id="main1"></div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-info">
+					<h2>集体企业项目情况</h2>
+					<!--info为每一个内容的背景-->
+					<div class="info" style="min-width:450px">
+						<!--以下四个span是用来做样式的与内容无关-->
+						<span class="row1"></span>
+						<span class="row2"></span>
+						<span class="col1"></span>
+						<span class="col2"></span>
+						<!--以上四个span是用来做样式的与内容无关-->
+						<ul>
+							<li>
+								<p>已开工</p>
+								<div class="circle circle1">
+									<img src="../../images/circle1.png">
+									300
+								</div>
+							</li>
+							<li>
+								<p>今日开工</p>
+								<div class="circle circle2">
+									<img src="../../images/circle2.png">
+									170
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="right-info">
+					<h2>各单位计划开工占比</h2>
+					<div class="info">
+						<!--以下四个span是用来做样式的与内容无关-->
+						<span class="row1"></span>
+						<span class="row2"></span>
+						<span class="col1"></span>
+						<span class="col2"></span>
+						<!--以上四个span是用来做样式的与内容无关-->
+						<div id="cityPie" style="width:100%;height:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<h2>已开工项目整体情况</h2>
+			<!--info为每一个内容的背景-->
+			<div class="info">
+				<!--以下四个span是用来做样式的与内容无关-->
+				<span class="row1"></span>
+				<span class="row2"></span>
+				<span class="col1"></span>
+				<span class="col2"></span>
+				<!--以上四个span是用来做样式的与内容无关-->
+				<ul>
+					<li>
+						<p>电压等级数量占比</p>
+						<div id="dbar" style="width:100%;height:90%;"></div>
+					</li>
+					<li>
+						<p>施工状态数量分析</p>
+						<div id="sBar" style="width:100%;height:100%;"></div>
+					</li>
+					<li>
+						<p>各县项目数量对比</p>
+						<div id="cityBar" style="width:100%;height:100%;"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 主题布局结束 -->
+	<script>
+		$(window).on("resize",function(){
+			//location.reload();
+		})
+		var h=parseInt($(document).height())-76;
+			$("#main").css("height",h+"px");
+			$("#bg").css("height",$(document).height());
+			$("#main .top").css("height",(h*0.6)+"px");
+			$("#main .bottom").css("height",(h*0.4)+"px");
+			var left=parseInt($("#main .top .right").css("width"));
+			$("#main .top .left").css("paddingRight",(left+10)+"px");
+			$("#main .top .left .info").css("height",((h*0.6)-60)+"px");
+			$("#main .top .right .info").css("height",(((h*0.6)-120)/2)+"px");
+			$("#main .top .right .info .circle").css({height:((((h*0.6)-120)/2)-50)+"px",lineHeight:((((h*0.6)-120)/2)-50)+"px"});
+			$("#main .bottom .info").css("height",((h*0.4)-75)+"px");
+			$("#main .bottom .info li").css("height",(((h*0.4)-75)-30)+"px");
+			var circleLeft=parseInt($("#main .top .right li").css("width"))-parseInt($("#main .top .right li img").css("width"));
+			$("#main .top .right li img").css("left",circleLeft/2+"px");
+			
+	</script>
+</body>
+</html>

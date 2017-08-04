@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;"name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../css/commen/header.css">
+	<link rel="stylesheet" type="text/css" href="../../css/privite/shebei.css">
+	<script src="../../js/commen/jquery.min.js"></script>
+
+</head>
+<body>
+	<!--主题背景布局开始-->
+	<div id="bg">
+		<img src="../../images/bg.jpg">
+	</div>
+	<!--主题背景布局结束-->
+	<!--头部的布局开始-->
+	<div id="header">
+		<div class="header-bg"><img src="../../images/headerbg.png"></div>
+		<!--logo的布局-->
+		<div class="logo"><img src="../../images/logo.png"></div>
+		<!--nav的布局-->
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="../project/project.html">项目</a></li>
+				<li class="active">
+					<a href="#">视频</a>
+					<ol>
+						<li><a href="./shebei.html">设备管理</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--头部的布局结束-->
+	<!-- 主题布局开始 -->
+	<div id="main">
+		<div class="left">
+			<h2>设备列表</h2>
+			<!--info为每一个内容的背景-->
+			<div class="info" style="padding:10px;box-sizing:border-box">
+				<!--以下四个span是用来做样式的与内容无关-->
+				<span class="row1"></span>
+				<span class="row2"></span>
+				<span class="col1"></span>
+				<span class="col2"></span>
+				<!--以上四个span是用来做样式的与内容无关-->
+				<div class="easyui-tree"></div>
+			</div>
+		</div>
+		<div class="right">
+			<h2>设备信息</h2>
+			<!--info为每一个内容的背景-->
+			<div class="info" style="padding:10px;box-sizing:border-box">
+				<!--以下四个span是用来做样式的与内容无关-->
+				<span class="row1"></span>
+				<span class="row2"></span>
+				<span class="col1"></span>
+				<span class="col2"></span>
+				<!--以上四个span是用来做样式的与内容无关-->
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<th>设备名称</th>
+						<th>PUID</th>
+						<th>型号</th>
+						<th>类型</th>
+						<th>硬件版本</th>
+						<th>软件版本</th>
+					</tr>
+					<tr>
+						<td>梁山现场1</td>
+						<td>15103840135279...</td>
+						<td>CR680NC-C-J8-TF...</td>
+						<td>WENC</td>
+						<td>V17.22.1.0.0.8.24.0</td>
+						<td>various。1.6.1101</td>
+					</tr>
+					<tr>
+						<td>梁山现场1</td>
+						<td>15103840135279...</td>
+						<td>CR680NC-C-J8-TF...</td>
+						<td>WENC</td>
+						<td>V17.22.1.0.0.8.24.0</td>
+						<td>various。1.6.1101</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 主题布局结束 -->
+	<script>
+		$(window).on("resize",function(){
+			location.reload();
+		})
+		var h=parseInt($(document).height())-76;
+		$("#bg").css("height",$(document).height());
+		$("#main").css("height",h+"px");
+		$("#main .info").css("height",(h-65)+"px");
+		
+		
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#main{position: relative;}
+#main .left .info{position: relative;padding-bottom:40px;}
+#main .left{width:38%;height:100%;float:left;margin-left:2%;}
+#main .left .left-info{margin-bottom:5px;}
+#main .left table{width:100%;padding:20px 15px;}
+#main table th{font-size: 12px;color:#fff;line-height:30px;}
+#main .left table td{text-align: left;color:#caeafd;font-size: 12px;line-height: 26px;text-indent: 5px;}
+#main .left table tr:nth-child(even){background: #0a3b68;}
+#main .btn{position: absolute;right:10px;bottom:20px;color:#fff;}
+#main .menu{width:0px;height:100%;position: absolute;left:0px;top:0;background:#0a3b68;z-index:99;border:1px solid #060e32;border-left:0;transition:width .5s;-webkit-transition:width .5s;-moz-transition:width .5s;-o-transition:width .5s;}
+#main .menu .menu-btn{width:26px;cursor:pointer;height:120px;color:#fff;position: absolute;right:-26px;top:0px;background:#060e32;}
+#main .menu:hover{width:300px;}
+#main .menu .bottom-info{padding:20px 0px 20px 0px;position: relative;}
+#main .menu .bottom-info .search-btn{display:block;width:25%;height:30px;float:right;color:#fff;}
+#main .menu .bottom-info .search{width:70%;height:30px;float:left;margin:0px auto;background:rgba(255,255,255,0.1);position: relative;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1fffffff,endColorstr=#1fffffff)}
+#main .menu .bottom-info .search img{position: absolute;right: 10px;top:5px;}
+#main .menu .bottom-info .search input{width:100%;height:30px;line-height:30px;border:0;background: none;text-indent: 14px;color:#fff;}
+#main .right{width:59%;height:100%;float:right;}
+#main .right .right-top{width:100%;height:60%;}
+#main .right .right-bottom{width:100%;height:40%;}
+#main .right .right-bottom .info li{width:48%;margin:5px 1%;float:left;}
+#main .right .right-bottom .info li p{font-size: 20px;font-weight: 800;letter-spacing: 1px;color:#0aebf3;padding-top:10px;}

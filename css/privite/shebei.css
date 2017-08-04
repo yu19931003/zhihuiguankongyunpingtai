@@ -1,0 +1,7 @@
+#main{min-height:640px;}
+#main .left{width:450px;height:100%;float:left;}
+
+#main .right{width:100%;height:100%;padding-left:460px;box-sizing:border-box;}
+#main .right table{width:100%;}
+#main .right table th{line-height:30px;border:1px solid #ccc;color:#fff;}
+#main .right table td{line-height:26px;border:1px solid #ccc;color:#fff;border-top:0;}

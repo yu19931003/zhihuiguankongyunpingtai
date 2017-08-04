@@ -1,0 +1,35 @@
+#main{min-height:640px;}
+#main .left{width:450px;height:100%;float:left;}
+#main .left .top{width:100%;height:270px;}
+#main .left .top .top-info{width:90%;height:200px;margin:0 auto;position: relative;}
+#main .left .top .top-info img{position: absolute;left:32px;top:15px;}
+#main .left .top .top-info .btn{position: absolute;cursor:pointer;font-size: 24px;color:#fff;font-weight:800;text-align: center;}
+#main .left .top .top-info .btn .img{margin:0 auto;}
+#main .left .top .top-info .btn-right .img{background:url(../../images/aright.png);width:10px;height:14px;margin-top:80%;}
+#main .left .top .top-info .btn-left .img{background:url(../../images/aleft.png);width:10px;height:14px;margin-top:80%;}
+#main .left .top .top-info .btn-top .img{background:url(../../images/atop.png);width:12px;height:11px;margin-top:4%;}
+#main .left .top .top-info .btn-bottom .img{background:url(../../images/abottom.png);width:12px;height:11px;margin-top:20%;}
+#main .left .top .top-info .btn-right:hover>.img{background:url(../../images/right.png);}
+#main .left .top .top-info .btn-left:hover>.img{background:url(../../images/left.png);}
+#main .left .top .top-info .btn-top:hover>.img{background:url(../../images/top.png);}
+#main .left .top .top-info .btn-bottom:hover>.img{background:url(../../images/bottom.png);}
+#main .left .top .top-info .btn:hover{text-shadow:0px 0px 10px #fff;color:#fea03c;}
+#main .left .top .top-info .btn-center{width:50px;height:50px;left:92px;top:72px;line-height:50px;text-align: center;}
+#main .left .top .top-info .btn-left{width:40px;height:80px;left:34px;top:55px;line-height:80px;text-align: center;}
+#main .left .top .top-info .btn-right{width:40px;height:80px;left:154px;top:55px;line-height:80px;text-align: center;}
+#main .left .top .top-info .btn-top{width:80px;height:28px;left:75px;top:25px;line-height:28px;text-align: center;;}
+#main .left .top .top-info .btn-bottom{width:80px;height:28px;left:75px;bottom:33px;line-height:28px;text-align: center;}
+#main .left .top .top-info .sf-jia{width:40px;height:20px;right:115px;top:27px;line-height:20px;}
+#main .left .top .top-info .sf-jian{width:33px;height:20px;right:73px;top:27px;line-height:20px;}
+#main .left .top .top-info .gq-jia{width:40px;height:20px;right:98px;top:64px;line-height:20px;}
+#main .left .top .top-info .gq-jian{width:40px;height:20px;right:45px;top:64px;line-height:20px;}
+#main .left .top .top-info .jj-jia{width:40px;height:20px;right:93px;top:103px;line-height:20px;}
+#main .left .top .top-info .jj-jian{width:50px;height:20px;right:32px;top:103px;line-height:20px;}
+#main .left .top .top-info .sd-jian{width:50px;height:20px;right:62px;top:139px;}
+#main .left .top .top-info .sd-jia{width:34px;height:20px;right:114px;top:139px;}
+#main .left .bottom{width:100%;}
+#main .left .bottom .bottom-info {padding:20px 0px;}
+#main .left .bottom .bottom-info .search{width:90%;height:30px;margin:0px auto;background:rgba(255,255,255,0.1);position: relative;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1fffffff,endColorstr=#1fffffff)}
+#main .bottom-info .search img{position: absolute;right: 10px;top:5px;}
+#main .left .bottom .bottom-info .search input{width:100%;height:30px;line-height:30px;border:0;background: none;text-indent: 14px;color:#fff;}
+#main .right{width:100%;height:100%;padding-left:460px;box-sizing:border-box;}
